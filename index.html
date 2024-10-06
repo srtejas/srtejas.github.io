@@ -198,31 +198,59 @@
             margin-top: 40px;
         }
 
-        /* Responsive design */
+     /* Responsive design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack navigation items vertically */
+        text-align: center;     /* Center the navigation items */
+        padding: 10px 0;       /* Add padding for better spacing */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Space out items */
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 2.5em; /* Reduce size for smaller screens */
+    }
+
+    section {
+        padding: 40px 0; /* Reduce padding on sections */
+    }
+
+    h2 {
+        font-size: 2em; /* Reduce heading size for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.5em;
+        font-size: 2em; /* Further reduce for very small screens */
     }
 
     .container {
-        padding: 0 10px;
+        padding: 0 10px; /* Maintain padding for smaller devices */
+    }
+
+    .contact-info {
+        flex-direction: column; /* Stack contact info items vertically */
+    }
+
+    .contact-info a {
+        font-size: 1.5em; /* Adjust icon size */
+        margin: 5px 0; /* Add spacing between icons */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9em; /* Adjust font size for inputs */
+    }
+
+    .contact-form button {
+        font-size: 1em; /* Ensure button is appropriately sized */
     }
 }
+
 
         
     </style>
